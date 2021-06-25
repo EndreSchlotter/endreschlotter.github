@@ -39,7 +39,6 @@ window.addEventListener('scroll', ()=> {
     }
 })
 
-/* smooth scroll */
 // select links
 
 const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -61,7 +60,7 @@ scrollLinks.forEach(link => {
             position = position - navHeight;
         }
 
-        if(navHeight > 64) {
+        if(navHeight > 74) {
             position = position + containerHeight;
         }
 
