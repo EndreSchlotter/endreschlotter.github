@@ -16,30 +16,41 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="#" alt="">
-            <p>my logo</my></p>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-            </ul>
+    <header id="home">
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <a href="index.html"><img src="/assets/img/default.svg" alt="home" class="logo"></a>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="index.html#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="index.html#work" class="scroll-link">work</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            Project <strong>Moovsmart</strong> 
         </h1>
         <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-        <img src="assets/img/pexels-tranmautritam-326501.jpg" alt="" class="intro__img">
+        <img src="assets/img/moovsmart_project.PNG" alt="" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">

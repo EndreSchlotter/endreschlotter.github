@@ -5,42 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endre Schlotter Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="#" alt="">
-            <p>my logo</my>
-            </p>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-            </ul>
+    <header id="home">
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <a href="/index.html"><img src="/assets/img/default.svg" alt="home" class="logo"></a>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="scroll-link">work</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
+    <section class="intro">
+        <img src="assets/img/pexels-pixabay-461064.jpg" alt="" class="intro__img">
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Endre Schlotter</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-        <img src="assets/img/self_photo_zoomed.jpg" alt="" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">junior frontend developer</p>
     </section>
 
     <!-- My services -->
@@ -48,21 +54,7 @@
         <h2 class="section__title section__title--services">What I do</h2>
         <div class="services">
             <div class="service">
-                <h3>Design + Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>E-Commerce</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div> <!-- / service -->
-
-            <div class="service">
-                <h3>WordPress</h3>
+                <h3>Frontend Development</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
@@ -75,18 +67,23 @@
     <!-- About me -->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+        <p class="section__subtitle section__subtitle--about">Developer based out of Budapest</p>
 
         <div class="about-me__body">
+            <h3>About me</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
+            <h3>My skills</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <h3>My hobbies</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
         </div>
-
-        <img src="assets/img/u2.jpg" alt="" class="about-me__img">
+        <img src="/assets/img/self_photo_zoomed.jpg" class="about-me__img" alt="">
     </section>
 
     <!-- My Work -->
@@ -97,22 +94,17 @@
         <div class="portfolio">
             <!-- Portfolio item 01 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="assets/img/pexels-fauxels-3182774.jpg" alt="" class="portfolio__img">
+                <img src="assets/img/moovsmart_project.PNG" alt="" class="portfolio__img">
             </a>
 
             <!-- Portfolio item 02 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="assets/img/pexels-pixabay-270404.jpg" alt="" class="portfolio__img">
+                <img src="assets/img/u2.jpg" alt="" class="portfolio__img">
             </a>
 
             <!-- Portfolio item 03 -->
             <a href="portfolio-item.html" class="portfolio__item">
-                <img src="assets/img/pexels-pixabay-270637.jpg" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio item 04 -->
-            <a href="portfolio-item.html" class="portfolio__item">
-                <img src="assets/img/pexels-pixabay-373543.jpg" alt="" class="portfolio__img">
+                <img src="assets/img/u2.jpg" alt="" class="portfolio__img">
             </a>
         </div>
     </section>
@@ -144,7 +136,12 @@
         </ul>
     </footer>
 
-    <script src="assets/js/index.js"></script>
+    <!-- back to top -->
+    <a href="#home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="assets/js/app.js"></script>
 
 </body>
 
