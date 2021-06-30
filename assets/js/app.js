@@ -19,7 +19,7 @@ navToggle.addEventListener('click', () => {
    }
 });
 
-/*************  fixed navbar ****************/
+/*************  fixed navbar and back to top button ****************/
 const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
 
@@ -48,7 +48,9 @@ scrollLinks.forEach(link => {
         // prevent default
         e.preventDefault();
         // navigate to specific spot
-        const id = e.currentTarget.getAttribute('href').slice(1);
+        const actualHref = e.currentTarget.getAttribute('href');
+        const indexOfHashtag = actualHref.indexOf('#');
+        const id = actualHref.substr(indexOfHashtag + 1);
         const element = document.getElementById(id);
         // calculate the heights
         const navHeight = navbar.getBoundingClientRect().height;
