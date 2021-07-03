@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <header>
         <nav id="nav">
             <div class="nav-center">
@@ -38,12 +39,16 @@
                         <li>
                             <a href="#work" class="scroll-link">work</a>
                         </li>
+                        <li>
+                            <a href="#contact" class="scroll-link">contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Intro -->
     <section class="intro" id="home">
         <img src="assets/img/pexels-pixabay-461064.jpg" alt="" class="intro__img">
         <h1 class="section__title section__title--intro">
@@ -65,6 +70,19 @@
         </div> <!-- / services -->
 
         <a href="#work" class="btn">My Work</a>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/EndreSchlotter" target="_blank" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/endreschlotter/" target="_blank" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
     </section>
 
     <!-- About me -->
@@ -99,50 +117,46 @@
             <a href="portfolio-item1.html" class="portfolio__item">
                 <img src="assets/img/moovsmart_project.PNG" alt="" class="portfolio__img">
             </a>
-
             <!-- Portfolio item 02 -->
             <a href="portfolio-item2.html" class="portfolio__item">
-                <img src="assets/img/u2.jpg" alt="" class="portfolio__img">
+                <img src="assets/img/movie-app_project.PNG" alt="" class="portfolio__img">
             </a>
-
             <!-- Portfolio item 03 -->
-            <a href="portfolio-item3.html" class="portfolio__item">
-                <img src="assets/img/u2.jpg" alt="" class="portfolio__img">
+            <a href="portfolio-item2.html" class="portfolio__item">
+                <img src="assets/img/moovsmart_project.PNG" alt="" class="portfolio__img">
             </a>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact -->
 
+    <section class="contact" id="contact">
+        <h2 class="section__title section__title--services">Contact me</h2>
+        <div class="form-container">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqvzpgr"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your message" required=""></textarea>
+    
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">                    	
+                    <input type="hidden" name="_next" value="https://endreschlotter.netlify.app" />
+                </fieldset>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:schlotter.endre@gmail.com" class="footer__link">schlotter.endre@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a href="https://github.com/EndreSchlotter" target="_blank" class="social-list__link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/endreschlotter/" target="_blank" class="social-list__link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://dribbble.com/" target="_blank" class="social-list__link">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.behance.net/ildiesign" target="_blank" class="social-list__link">
-                    <i class="fab fa-behance-square"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://codepen.io/" target="_blank" class="social-list__link">
-                    <i class="fab fa-codepen"></i>
-                </a>
-            </li>
-        </ul>
+
     </footer>
 
     <!-- back to top -->
