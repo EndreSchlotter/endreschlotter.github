@@ -1,9 +1,8 @@
 // Date in footer
 
-// const date = document.getElementById('date');
-// date.innerHTML = new Date().getFullYear();
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
 
-/* close links by using dynamic height */
 
 const navToggle = document.querySelector('.nav-toggle');
 const linksContainer = document.querySelector('.links-container');
