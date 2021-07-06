@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endre Schlotter Portfolio Website</title>
+
+    <!-- SEO -->
+    <meta name="title" content="Endre Schlotter's Portfolio Website">
+    <meta name="description" content="A website for showcasing my frontend skills and the projects I have done so far.">
+    <meta name="keywords" content="frontend, developer, front-end, project, portfolio">
+    <meta name="robots" content="index/follow">
+
+    <!-- Open Graph protokol -->
+    <meta property="og:title" content="Endre Schlotter's Portfolio Website">
+    <meta property="og:description" content="A website for showcasing my frontend skills and the projects I have done so far.">
+    <meta propety="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8ZGV2ZWxvcGVyfHx8fHx8MTYyNTU2NDY4MQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600">
+    <meta property="og:url" content="https://endreschlotter.netlify.app">
+
+    <title>Endre Schlotter's Portfolio Website</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- google fonts -->
@@ -71,6 +85,7 @@
         </div> <!-- / services -->
 
         <a href="#work" class="btn">My Work</a>
+        <a href="https://drive.google.com/file/d/1jMpI8FdMXxVMW6WOQOziZI2eWTXS0FCH/view?usp=sharing" class="btn">Resume</a>
 
         <ul class="social-list">
             <li class="social-list__item">
@@ -129,17 +144,14 @@
             <a href="movieapp.html" class="portfolio__item">
                 <img src="assets/img/movie-app_project.PNG" alt="" class="portfolio__img">
             </a>
-            <!-- Portfolio item 03 -->
-            <a href="moovsmart.html.html" class="portfolio__item">
-                <img src="assets/img/moovsmart_project.PNG" alt="" class="portfolio__img">
-            </a>
         </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
         <div data-aos="fade-right" class="form-container">
-            <h2 class="section__title section__title--services">Contact</h2>
+            <h2 class="section__title section__title--services">Contact me</h2>
+            <p class="section__subtitle section__subtitle--contact">if you are looking for a developer</p>
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqvzpgr"
                 method="post">
                 <fieldset id="fs-frm-inputs">
@@ -147,7 +159,7 @@
                     <input type="text" name="name" id="full-name" placeholder="Your full name" required="">
     
                     <label for="email-address">Email Address</label>
-                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <input type="email" name="_replyto" id="email-address" placeholder="example@domain.com" required="">
     
                     <label for="message">Message</label>
                     <textarea rows="5" name="message" id="message" placeholder="Your message" required=""></textarea>
@@ -176,7 +188,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({duration: 1200, disable: function() {
         var maxWidth = 800;
-        console.log(window.innerWidth);
         return window.innerWidth < maxWidth;
         }
         });

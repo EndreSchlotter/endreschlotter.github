@@ -133,7 +133,7 @@ h3 {
     padding: 0.25em 1em;
 }
 
-.section__subtitle--work {
+.section__subtitle--work, .section__subtitle--contact {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
@@ -143,7 +143,7 @@ h3 {
 
 nav {
     background: var(--clr-white);
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .fixed-nav {
@@ -168,7 +168,7 @@ nav {
 
 .nav-toggle {
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--clr-dark);
     background: transparent;
     border: 1px solid var(--clr-dark);
@@ -182,8 +182,9 @@ nav {
 }
 
 .logo {
-    width: 40px;
+    height: 40px;
     margin-left: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .links-container {
@@ -237,7 +238,7 @@ nav {
 
 @media screen and (min-width: 800px) {
     .logo {
-        width: 60px;
+        height: 60px;
     }
     .nav-center {
         width: 90vw;
@@ -262,7 +263,7 @@ nav {
     }
     .links a {
         margin: 1rem;
-        padding: 0;
+        padding-top: 0.5rem;
     }
 }
 
@@ -338,7 +339,7 @@ nav {
 }
 
 .service {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -490,20 +491,20 @@ nav {
     -moz-appearance: none;
 }
 
-#fs-frm label, #fs-frm legend, #fs-frm ::placeholder {
+#fs-frm label, #fs-frm ::placeholder {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: baseline;
 }
 
-#fs-frm input, #fs-frm select, #fs-frm textarea {
+#fs-frm input, #fs-frm textarea {
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 0.75em 0.75rem;
     margin-bottom: 1.5rem;
 }
 
-#fs-frm input:focus, #fs-frm select:focus, #fs-frm textarea:focus {
+#fs-frm input:focus, #fs-frm textarea:focus {
     background-color: white;
     outline-style: solid;
     outline-width: thin;
@@ -556,7 +557,7 @@ nav {
     }
 }
 
-/************* Individual portfolio item styles ***************/
+/************* Individual project styles ***************/
 
 main {
     background-color: var(--clr-white);
@@ -584,15 +585,14 @@ main {
 }
 
 .project__card-body--title {
-    text-align: center;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
     color: var(--clr-accent);
+    margin-left: 1rem;
 }
 
 .project__card-body--list {
-    text-align: center;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 2rem 1rem;
     padding: 0;
 }
 
