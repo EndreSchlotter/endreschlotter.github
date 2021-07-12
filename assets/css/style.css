@@ -454,6 +454,7 @@ nav {
 
 .portfolio__item {
     background: var(--clr-accent);
+    max-height: 95%;
     overflow: hidden;
 }
 
